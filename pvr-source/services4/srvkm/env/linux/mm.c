@@ -97,6 +97,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #define CONFIG_TILER_GRANULARITY 0
 #endif
 
+#if LINUX_VERSION_CODE > KERNEL_VERSION(3,4,00)
+#undef SUPPORT_TI_LIBION
+#endif
 /*
  * The page pool entry count is an atomic int so that the shrinker function
  * can return it even when we can't take the lock that protects the page pool
