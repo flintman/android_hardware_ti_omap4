@@ -5,6 +5,7 @@ LOCAL_SRC_FILES := \
     ColorConvert.cpp
 
 LOCAL_C_INCLUDES:= \
+        $(TOP)/hardware/ti/omap4/include \
         $(TOP)/frameworks/native/include/media/openmax \
         $(TOP)/frameworks/native/include/media/editor
 

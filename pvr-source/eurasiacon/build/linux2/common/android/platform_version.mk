@@ -57,7 +57,7 @@ else
 PLATFORM_VERSION := $(shell grep '^ro.build.version.release=' \
 	$(BUILD_PROP) | cut -f2 -d'=' | cut -f1 -d'-')
 endif
-
+PLATFORM_VERSION := 8.0.0
 $(info PLATFORM_VERSION=$(PLATFORM_VERSION))
 
 define version-starts-with

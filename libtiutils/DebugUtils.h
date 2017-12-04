@@ -19,6 +19,7 @@
 
 #include <android/log.h>
 #include <utils/threads.h>
+#include <cutils/atomic.h>
 #include <utils/Vector.h>
 
 
